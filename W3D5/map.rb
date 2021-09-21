@@ -1,4 +1,4 @@
-class Map 
+class Map
 
   def initialize
     @map = Array.new {Array.new}
