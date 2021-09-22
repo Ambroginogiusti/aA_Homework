@@ -18,11 +18,11 @@ class Simon
   end
 
   def take_turn
-    if !self.game_over
       self.show_sequence
       self.require_sequence
-      self.round_success_message
-      self.sequence_length += 1
+      unless self.game_over
+        self.round_success_message
+        self.sequence_length += 1
     end
   end
 
@@ -39,11 +39,11 @@ class Simon
   end
 
   def round_success_message
-    puts "success"
+    puts "round successful"
   end
 
   def game_over_message
-    puts "game over"
+    puts "game over (your score is #{self.sequence_length - 1})"
   end
 
   def reset_game
