@@ -8,7 +8,7 @@ class Simon
   end
 
   def play
-
+    
   end
 
   def take_turn
